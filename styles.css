@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    padding: 0 15px;
+    min-height: 100vh;
+    justify-content: center;
+    background: #fff;
+    /* border: 5px solid green; */
+    width: 900px;
+    margin: auto;
+}
+
+.Instagram-page {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.Instagram-page .Image{
+    margin-bottom: 90px;
+    padding: 5px;
+  
+}
+
+
+.Instagram-page .logo{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.Instagram-page h1{
+    color: #1877f2;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.Instagram-page p{
+    font-size: 1.75rem;
+    white-space: nowrap;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    
+   
+}
+.formContainer{
+    border: 1px solid rgba(128, 128, 128, 0.219);
+    padding: 5px;
+    height: 380px;
+    margin-top: -90px;
+}
+.signup{
+    border: 1px solid rgba(128, 128, 128, 0.219);
+    padding: 25px;
+    text-align: center;
+    margin-top: 8px;
+}
+.or{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    justify-content: space-between;
+    width: 74%;
+    text-transform: uppercase;
+    color: rgba(128, 128, 128, 0.736);
+}
+.or div:first-child, .or div:last-child{
+    border-bottom:1px solid rgba(128, 128, 128, 0.736) ;
+    width: 100px;
+}
+
+form input{
+    height: 40px;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    font-size: 1rem;
+    padding: 0 14px;
+}
+
+
+form input:focus{
+    outline: none;
+    /* border-color: #1877f2; */
+}
+
+input::placeholder{
+    color: #777;
+    font-size: 14px;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.link .login{
+    border: none;
+    outline:none;
+    cursor: pointer;
+    background: #1877f2;
+    padding: 8px 0;
+    border-radius: 6px;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    width: 75%;
+}
+
+.link .login:hover{
+    background: #0d65d9;
+}
+
+form a{
+    text-decoration: none;
+}
+
+.link .forget{
+    color: #1877f2;
+    font-family: 0.875rem;
+}
+
+
+.link .forget:hover{
+    text-decoration: underline;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.button{
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button a{
+    padding: 15px 20px;
+    background: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.para p{
+    font-size: small;
+    text-align: center;
+    
+}
+@media (max-width: 900px){
+    .Instagram-page{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Instagram-page .text{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 460px){
+    .Instagram-page h1{
+        font-size: 3.5rem;
+    }
+
+    .Instagram-page p{
+        font-size: 1.3rem;
+    }
+
+    form{
+        padding: 15px;
+    }
+}
